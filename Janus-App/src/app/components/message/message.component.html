@@ -1,21 +1,19 @@
-<div class="container1">
-    <div class="text">CREATE NEW MESSAGE</div>
+<div class=""  style="margin:5% 10%; font-size: 18px; width: 50%;">
+    <div class="text">Save Message</div>
   
     <form [formGroup]="issueForm">
-      <div class="form-row">
-        <i class="fas fa-project-diagram"></i>
+      <div class="form-row" style="margin:5% 0">
         <div class="input-data">
           <label for="Identifier" class="control-label required"></label>
-          <input type="text" id="Identifier" class="form-control" placeholder="Identifier" formControlName="identifier"
+          <input type="text" id="Identifier" class="form-control" placeholder="Subject" formControlName="identifier"
             [(ngModel)]="message.identifier" />
-          <div class="underline"></div>
+   
         </div>
       </div>
       
   
-      <div class="form-row">
-        <i class="fas fa-prescription-bottle"></i>
-        <div class="input-data">
+      <div class="form-row" style="margin:5% 0">
+        <div class="input-data" style="margin-bottom:40px ;" >
           <label for="Description" class="control-label required"></label>
           <textarea class="form-control" id="Description" placeholder="Description" formControlName="description"
             [(ngModel)]="message.description" rows="3"></textarea>

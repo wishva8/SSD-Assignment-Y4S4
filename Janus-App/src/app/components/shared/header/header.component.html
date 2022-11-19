@@ -3,23 +3,23 @@
     <nav class="nav navbar-nav navbar-right">
       <ul>
         
-        <li style="margin-right: 5rem;"><img src="assets/settings.png" />
+        <li style="margin-right: 5rem;"><img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png" />
           <ul>
             <li><a [routerLink]="['/user-list']">Users</a></li>
             <li *ngIf="isAdmin"><a [routerLink]="['/register']">Register User</a></li>
           </ul>
         </li>
-        <li style="margin-right: 0.5rem;"><img src="assets/unnamed.png" />
+        <li style="margin-right: 0.5rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" />
           <ul>
             <li><a [routerLink]="['/profile']">Profile</a></li>
             <li><a (click)="logout()">Sign Out</a></li>
           </ul>
         </li>
         <li style="margin-right: 20cm;">
-          <a [routerLink]="['/message']" class="change">Add Message </a>
+          <a [routerLink]="['/message']" class="change">Upload Message </a>
           </li>
           <li>
-          <a [routerLink]="['/attachments']" class="change">Add Attachments </a>
+          <a [routerLink]="['/attachments']" class="change">Send Attachments </a>
           </li>
       </ul>
     </nav>

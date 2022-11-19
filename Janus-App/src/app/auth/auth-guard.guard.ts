@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
+import Swal from 'sweetalert2';
 import { AuthenticationService } from '../service/authentication.service';
 
 @Injectable({
@@ -16,7 +17,10 @@ export class AuthGuard implements CanActivate {
       if (this.hasRole(route.data.roles, currentUser.roles)) {
         return true;
       } else {
-        alert('no permission')
+        Swal.fire({
+          icon: 'error',
+          title: 'You do not have access to this',
+        })
         return false;
       }
     }

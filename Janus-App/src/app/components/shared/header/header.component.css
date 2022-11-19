@@ -23,7 +23,7 @@ nav label {
 .button span {
   line-height: 40px;
   transition: 0.5s;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .button span.rotate {
@@ -38,38 +38,40 @@ nav label {
 }
 
 ul {
-  background: #3b1840;
+  background: #ffffff00;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
 li {
-  color: #fff;
-  background: #3b1840;
+  color: rgb(255, 255, 255);
+  background: #3b71ca;
   float: right;
   padding: 0.8rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.2s;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 li a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   width: 10rem;
 }
 
 li:hover {
-  background: #6d3f74;
+  background: #00b7ff;
   cursor: pointer;
   text-decoration: none;
 }
 
 ul li ul {
-  background: #6d3f74;
+  background: #3b71ca;
   visibility: hidden;
   opacity: 0;
-  min-width: 8rem;
+  min-width: 10rem;
   position: absolute;
   transition: all 0.2 ease;
   margin-top: 1rem;
@@ -97,18 +99,18 @@ select {
   color: white;
   min-width: 6rem;
   min-height: 2rem;
-  background-color: #6d3f74;
+  background-color: #ffdd00;
 }
 
 .selectBox:hover {
-  background: #3b1840;
+  background: #ffdd00;
   cursor: pointer;
   text-decoration: none;
   cursor: auto;
 }
 
 p {
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 0;
   margin-top: 0.4rem;
 }
