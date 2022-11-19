@@ -6,8 +6,8 @@ body {
 
 .main {
   background-color: #FFFFFF;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin: 7em auto;
   border-color: #3B1840;
   border-radius: 1.5em;
@@ -27,12 +27,12 @@ body {
 }
 
 .log h2 {
-  padding-left: 120px;
-  padding-top: 30px;
+  padding-left: 200px;
+  padding-top: 80px;
 }
 
 .un {
-  width: 76%;
+  width: 86%;
   text-align: center;
   font-weight: 700;
   font-size: 17px;
@@ -40,12 +40,13 @@ body {
   background-color: #E9E7E7;
   padding: 10px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   outline: none;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.02);
   margin-bottom: 50px;
   margin-left: 46px;
+  margin-top: 30px;
   text-align: center;
   font-weight: normal;
   margin-bottom: 27px;
@@ -57,19 +58,19 @@ form.form1 {
 }
 
 .pass {
-  width: 76%;
+  width: 86%;
   text-align: center;
   font-weight: 700;
   font-size: 17px;
   letter-spacing: 1px;
   background-color: #E9E7E7;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   outline: none;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.02);
   margin-bottom: 50px;
-  margin-top: -10px;
+  margin-top: 10px;
   margin-left: 46px;
   text-align: center;
   font-weight: normal;
@@ -86,16 +87,16 @@ form.form1 {
 
 .submit {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
-  background-color: #BC2550;
+  background-color: #3b71ca;
   border: 0;
   padding-left: 121px;
   padding-right: 121px;
   padding-bottom: 10px;
   padding-top: 10px;
   font-family: 'Ubuntu', sans-serif;
-  margin-left: 46px;
+  margin-left: 150px;
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
@@ -111,7 +112,7 @@ form.form1 {
 }
 
 .submit:hover {
-  background-color: #EA4070;
+  background-color: #1F2464;
   border-style: none;
 }
 
