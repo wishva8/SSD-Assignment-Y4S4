@@ -3,14 +3,14 @@
     <h2>USER LOGIN</h2>
   </div>
   <form class="form1" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-    <input class="un" type="text" placeholder="USERNAME" formControlName="username"
-      [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+      <input class="un" type="text" placeholder="Username" formControlName="username"
+        [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
     <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
       <div class="underline">
         <div *ngIf="f.username.errors.required">Username is required</div>
       </div>
     </div>
-    <input class="pass" type="password" placeholder="PASSWORD" formControlName="password"
+    <input class="pass" type="password" placeholder="Password" formControlName="password"
       [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
     <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
       <div class="underline">
