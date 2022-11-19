@@ -2,6 +2,11 @@
   <div class="log">
     <h2>USER LOGIN</h2>
   </div>
+  <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+              class="img-fluid"
+              alt="Phone image"
+            />
   <form class="form1" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
       <input class="un" type="text" placeholder="Username" formControlName="username"
         [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />

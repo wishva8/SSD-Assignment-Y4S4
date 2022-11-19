@@ -46,7 +46,7 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.02);
   margin-bottom: 50px;
   margin-left: 46px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   text-align: center;
   font-weight: normal;
   margin-bottom: 27px;
@@ -70,7 +70,7 @@ form.form1 {
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.02);
   margin-bottom: 50px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-left: 46px;
   text-align: center;
   font-weight: normal;
@@ -104,7 +104,11 @@ form.form1 {
   border-style: none;
 
 }
-
+.img-fluid{
+  height: 200px;
+  width: 200px;
+  margin-left: 190px;
+}
 .underline {
   margin-top: -20px;
   margin-left: 20px;
