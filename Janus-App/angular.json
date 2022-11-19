@@ -60,6 +60,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "ssl": true,
           "options": {
             "browserTarget": "Janus-App:build",
             "proxyConfig": "src/proxy.conf.json"
