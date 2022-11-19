@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AttachmentService } from 'src/app/service/attachment.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-attachment',
@@ -27,6 +28,11 @@ export class AttachmentComponent implements OnInit {
   onUpload() {
       this.loading = !this.loading;
       console.log(this.file);
+      Swal.fire(
+        'File has been Uploaded!',
+        '',
+        'success'
+      )
       this.fileUploadService.upload(this.file).subscribe(
           (event: any) => {
               if (typeof (event) === 'object') {
