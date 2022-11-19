@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+
+  background: white;
+}
+.container{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 1.5em;
+  border-width: 5px;
+  border-color: #3B1840 ;
+  padding-bottom: 50px ;
+  margin-left: 700px ;
+  margin-top: -350px ;
+
+}
+
+
+.container1{
+  max-width: 350px;
+  background: #fff;
+  width: 350px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 1.5em;
+  border-width: 5px;
+  border-color: #3B1840 ;
+  padding-bottom: 50px ;
+  margin-left: 290px ;
+
+}
+
+
+.container .text{
+  text-align: left;
+  margin-left: 15px ;
+  font-size: 18px;
+  font-weight: 600;
+  color:  #675E5E ;
+}
+
+
+.container form .form-row{
+  display: flex;
+  margin: 32px 0;
+  margin-bottom: 10px ;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 30px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.ds{
+  margin-top:  -10px ;
+  color: #BC2550 ;
+}
+
+.ra{
+  size: 15 px ;
+  margin-top: 35px ;
+  position: block ;
+}
+
+
+
+
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #999494 ;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  font-size: 16px;
+  margin-top: -10px ;
+}
+.textarea label{
+  width: 100%;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #BC2550;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+
+
+
+
+.change{
+        text-align:  left ;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #BC2550 ;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 20px ;
+        margin-top: -10px;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+
+}
+
+.change:hover{
+  background-color: #EA4070;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
+
+
+
+.heading h2{
+  margin-left: 300px ;
+  margin-bottom: 20px ;
+  padding-top: 10px ;
+  color: #2E2E2E ;
+}
+
+#hrLine{
+   display: block;
+   overflow: hidden;
+   border-style: inset;
+   border-width: 1px;
+   margin-bottom: 70px ;
+   margin-left: 300px ;
+    width: 75% ;
+
+
+}
+
+#hrLine1{
+   display: block;
+   overflow: hidden;
+   border-style: inset;
+   border-width: 1px;
+   margin-bottom: 70px ;
+   width: 75% ;
+   color: #BC2550 ;
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    text-align:  left ;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #BC2550 ;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 60px ;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.custom-file-upload:hover{
+  background-color: #EA4070;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+img{
+  border-radius: 50%;
+  margin-left: 30px ;
+
+}
+
+
+.project{
+
+  text-align:  center ;
+        cursor: pointer;
+        border-radius: 20px;
+        color: black;
+        background-color: #B3DEC2 ;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 30px ;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+
+}
+
+.project1{
+
+  text-align:  center ;
+        cursor: pointer;
+        border-radius: 20px;
+        color: black;
+        background-color: #eca8ec ;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 30px ;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+
+
+}
+
+.project:hover , .project1:hover{
+  opacity: 80%;
+}
+
+
+
+.name {
+  margin-left:   600px ;
+  margin-top: 20px ;
+  padding-top: 17px ;
+  background-color: none !important;
+}
+
+/*User profile styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+
+  .container{
+  max-width: 600px;
+  background: #fff;
+  width: 600px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 1.5em;
+  border-width: 5px;
+  border-color: #3B1840 ;
+  padding-bottom: 50px ;
+  margin-left: 80px ;
+  margin-top: 50px ;
+  margin-bottom: 20px ;
+
+}
+
+.container1{
+  max-width: 350px;
+  background: #fff;
+  width: 350px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 1.5em;
+  border-width: 5px;
+  border-color: #3B1840 ;
+  padding-bottom: 50px ;
+  margin-left: 200px ;
+
+}
+
+.container .text{
+  text-align: center;
+  margin-left: 15px ;
+  font-size: 18px;
+  font-weight: 600;
+  color:  #675E5E ;
+}
+
+.heading h2{
+  margin-left: 300px ;
+  margin-bottom: 20px ;
+  padding-top: 10px ;
+  color: #2E2E2E ;
+
+}
+
+#hrLine{
+  align-content: center;
+   display: block;
+   overflow: hidden;
+   border-style: inset;
+   border-width: 1px;
+   margin-bottom: 70px ;
+   margin-left: 120px ;
+   width: 75% ;
+
+}
+
+
+
+}
+

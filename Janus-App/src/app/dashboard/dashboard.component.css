@@ -1,0 +1,69 @@
+.dash p{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+
+
+.change{
+  text-align:  left ;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none ;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 500px ;
+  margin-top: 500px;
+ 
+
+ background-color: #BC2550;
+
+
+}
+.change:hover {
+  background-color: #EA4070 !important;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+

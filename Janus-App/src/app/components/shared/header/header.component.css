@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  font-family: monospace;
+}
+
+nav label {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+.button span {
+  line-height: 40px;
+  transition: 0.5s;
+  color: white;
+}
+
+.button span.rotate {
+  transform: rotate(-180deg);
+}
+
+.button img {
+  height: 30px;
+  width: 30px;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+ul {
+  background: #3b1840;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: #3b1840;
+  float: right;
+  padding: 0.8rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+li a {
+  color: #fff;
+  width: 10rem;
+}
+
+li:hover {
+  background: #6d3f74;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul li ul {
+  background: #6d3f74;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 8rem;
+  position: absolute;
+  transition: all 0.2 ease;
+  margin-top: 1rem;
+  left: 0;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+}
+
+select {
+  border-radius: 8px;
+  color: white;
+  min-width: 6rem;
+  min-height: 2rem;
+  background-color: #6d3f74;
+}
+
+.selectBox:hover {
+  background: #3b1840;
+  cursor: pointer;
+  text-decoration: none;
+  cursor: auto;
+}
+
+p {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0.4rem;
+}

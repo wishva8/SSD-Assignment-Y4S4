@@ -1,0 +1,56 @@
+<br /><br />
+<div class="heading">
+  <h2>USER PROFILE</h2>
+</div>
+
+<hr id="hrLine" />
+
+<!--profile photo -->
+
+<div class="container1">
+  <img src="assets/avatar.png" width="200" height="200" /><br />
+  <label class="custom-file-upload">
+    <input type="file" />
+    Upload Photo
+  </label>
+</div>
+
+<!--personal Deatils -->
+<div class="container">
+  <div class="text">PERSONAL INFORMATION</div>
+
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="input-data">
+        <label class="name"> Username</label>
+        <input type="email" placeholder="username@gmail.com" class="form-control" formControlName="username" [ngClass]="{
+            'is-invalid': submitted && formGroup.get('username').errors
+          }" [(ngModel)]="profile.username" readonly />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="input-data">
+        <label class="name"> Full name</label>
+        <input id="fullName" type="text" placeholder="Full Name" class="form-control" formControlName="fullName"
+          [(ngModel)]="profile.fullName" />
+
+        <div class="underline"></div>
+        <app-form-validation-common *ngIf="formGroup.controls['fullName'].hasError('required')"
+          [displayError]="isFieldValid('fullName')" errorMsg="Please enter your full name">
+        </app-form-validation-common>
+      </div>
+    </div>
+    <br />
+
+    <button class="change" type="submit">UPDATE</button>
+
+    <a class="change" routerLink="/profile/update-password">CHANGE PASSWORD</a><br /><br /><br />
+
+    <div class="text">PROJECT ASSIGNED</div>
+    <br /><br />
+    <a class="project" *ngFor="let p of this.currentUserProjects?.projects1">{{
+      p.name
+      }}</a>
+  </form>
+</div>

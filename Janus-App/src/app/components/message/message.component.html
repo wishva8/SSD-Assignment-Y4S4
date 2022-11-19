@@ -1,0 +1,33 @@
+<div class="container1">
+    <div class="text">CREATE NEW MESSAGE</div>
+  
+    <form [formGroup]="issueForm">
+      <div class="form-row">
+        <i class="fas fa-project-diagram"></i>
+        <div class="input-data">
+          <label for="Identifier" class="control-label required"></label>
+          <input type="text" id="Identifier" class="form-control" placeholder="Identifier" formControlName="identifier"
+            [(ngModel)]="message.identifier" />
+          <div class="underline"></div>
+        </div>
+      </div>
+      
+  
+      <div class="form-row">
+        <i class="fas fa-prescription-bottle"></i>
+        <div class="input-data">
+          <label for="Description" class="control-label required"></label>
+          <textarea class="form-control" id="Description" placeholder="Description" formControlName="description"
+            [(ngModel)]="message.description" rows="3"></textarea>
+          <div class="underline"></div>
+          <app-form-validation-common [displayError]="isFieldValid('description')" errorMsg="*Please enter a brief description"></app-form-validation-common>
+        </div>
+      </div>
+      <br />
+      <br />
+  
+      <button class="submit" (click)="onSubmit()" [routerLink]="['/message-list']">CREATE</button>
+      <a class="submit1" (click)="reset()">CANCEL</a>
+    </form>
+  </div>
+  

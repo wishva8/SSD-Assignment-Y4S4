@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: white;
+}
+
+tbody tr:hover {
+  background-color: #b4a6a6;
+}
+.container1 {
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 1.5em;
+  border-width: 5px;
+  border-color: #3b1840;
+  padding-bottom: 50px;
+  margin-left: 400px;
+}
+
+.container1 .text {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+
+  color: black;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 55px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 700px;
+}
+
+.styled-table thead tr {
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/*.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}*/
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.inprogrss {
+  text-align: left;
+  cursor: pointer;
+  border: 1px #bc2550;
+  border-radius: 20px;
+  color: black;
+  background-color: #f5e515;
+  border-color: black;
+
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.update {
+  text-align: left;
+  cursor: pointer;
+  border: 1px #bc2550;
+  border-radius: 20px;
+  color: #bc2550;
+  background-color: white;
+  border-color: black;
+
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.open {
+  text-align: left;
+  cursor: pointer;
+  border: 1px #bc2550;
+  border-radius: 20px;
+  color: black;
+  background-color: #ee2121;
+  border-color: black;
+
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.complete {
+  text-align: left;
+  cursor: pointer;
+  border: 1px #bc2550;
+  border-radius: 20px;
+  color: black;
+  background-color: #10b568;
+  border-color: black;
+
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.change1 {
+  font-family: sans-serif !important;
+  background-color: white !important;
+  border-style: none !important;
+  font-size: 15px !important;
+  color: blue !important;
+}
+.change1:hover {
+  color: #bc2550 !important;
+  text-decoration: underline !important;
+}
+.heading h2 {
+  margin-left: 300px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  color: #2e2e2e;
+  margin-left: 600px;
+}
+
+.page {
+  margin-top: 800px;
+  margin-left: -500px;
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff !important;
+  background-color: #bc2550;
+  border: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 350px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: #ea4070;
+}
+
+.submit1 {
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff !important;
+  background-color: #bc2550;
+  border: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.submit1:hover {
+  background-color: #ea4070;
+}
+
+.box select {
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .container .text {
+    font-size: 30px;
+  }
+  .container form {
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row {
+    display: block;
+  }
+  form .form-row .input-data {
+    margin: 35px 0 !important;
+  }
+  .submit-btn .input-data {
+    width: 40% !important;
+  }
+}

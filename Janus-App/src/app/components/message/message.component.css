@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: white;
+}
+.container1{
+  max-width: 800px;
+  overflow-y: auto;
+  height: 700px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 1.5em;
+  border-width: 5px;
+  border-color: #3B1840 ;
+  padding-bottom: 50px ;
+  margin-left: 450px;
+  margin-top: 80px;
+
+
+
+
+}
+.container1 .text .textarea{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+
+  color:  black ;
+}
+
+.container1 .text{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+
+  color:  black ;
+}
+.container1 form{
+  padding: 30px 0 0 0;
+}
+.container1 form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+
+}
+
+.form-row i{
+  margin-top: 10px ;
+
+}
+
+
+.ds{
+  margin-top:  -10px ;
+  color: #BC2550 ;
+}
+
+.ra{
+  size: 15 px ;
+  margin-top: 35px ;
+  position: block ;
+}
+
+.form-control .active{
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+
+
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  padding-left: 50px;
+}
+
+.textarea{
+  height: 100% ;
+  width : 100%;
+}
+.input-data input:focus ~ label, .form-control form-control:focus ~ label,
+.input-data input:valid ~ label, .form-control form-control:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #999494 ;
+}
+.form-control form-control{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  font-size: 16px;
+}
+.form-control label{
+  width: 100%;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #BC2550;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.form-control form-control:focus ~ .underline:before,
+.form-control form-control:valid ~ .underline:before{
+  transform: scale(1);
+}
+
+
+
+.submit {
+      cursor: pointer;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #BC2550 ;
+        border: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 400px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+}
+
+.submit1 {
+      cursor: pointer;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #BC2550 ;
+        border: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+}
+
+.submit:hover , .submit1:hover{
+  background-color: #EA4070;
+}
+
+.login{
+  text-align:  center;
+  text-decoration-color: black ;
+  font-size: 15px ;
+  padding-top: 10px ;
+  cursor: pointer;
+
+}
+
+.validation{
+  font-size: 10px;
+  height: 20px ;
+  display: inline-flex;
+
+}
+
+
+.box select {
+  background-color: white;
+  color: black;
+  width: 200px;
+  border-radius: 10px ;
+  font-size: 15px;
+  margin-top: 10px ;
+  margin-left: 10px ;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+.LeaderName{
+  font-size: 18px;
+  color: gray ;
+
+}
+
+/* rADIO BUTTON CSS */
+
+
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
